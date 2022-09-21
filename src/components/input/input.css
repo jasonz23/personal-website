@@ -1,0 +1,22 @@
+.input-box {
+    background: #091833;
+    width:50vw;
+    border: 0px;
+    color:#0abdc6;
+    margin-left: 10px;
+}
+
+.input-box:focus {
+    border:0px;
+    outline:none;
+}
+
+
+
+.main-page-command-name {
+    color:#ea00d9;
+}
+
+.main-page-command-location {
+    color:#1a57ac;
+}
