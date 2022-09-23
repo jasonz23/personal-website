@@ -18,7 +18,7 @@ const Input = (props) => {
                 console.log("help");
                 location.innerHTML += `<div class="command-return">
                                         <div>
-                                            Usable Commands are cd, help
+                                            Usable Commands are cd, help, ls
                                         </div>
                                         <div>
                                             <div>
@@ -38,8 +38,15 @@ const Input = (props) => {
             case "cd":
                 checkLocationAndGo(previousInputList[1], location);
                 break;
+            case "ls":
+                if (window.location.pathname.length == 1) {
+                    location.innerHTML += '<div class="command-return">linkedin, github, aboutme, contactme<div>';
+                } else {
+                    location.innerHTML += "</ br>"
+                }
+                break;
             default:
-                location.innerHTML += `<div class="command-return">command not found: ${previousInput}. Please enter help to see all available command.</div>`
+                location.innerHTML += `<div class="command-return">command not found: ${previousInput}. Please enter 'help' to see all available command.</div>`
             
         }
     }
@@ -60,7 +67,7 @@ const Input = (props) => {
     }
 
     const throwCdError = (location) => {
-        location.innerHTML += '<div class="command-return">Unknown location. Please enter help to see all available locations<div>';
+        location.innerHTML += `<div class="command-return">Unknown location. Please enter 'help' to see all available locations<div>`;
     }
 
     const checkLocationAndGo = (input, location) => {
