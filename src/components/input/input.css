@@ -3,15 +3,17 @@
     width:50vw;
     border: 0px;
     color:#0abdc6;
-    margin-left: 10px;
+}
+
+input[type="text"]
+{
+    font-size:16px;
 }
 
 .input-box:focus {
     border:0px;
     outline:none;
 }
-
-
 
 .main-page-command-name {
     color:#ea00d9;
