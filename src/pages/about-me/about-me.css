@@ -1,5 +1,4 @@
-
-.main-page-screen {
+.about-me-page-screen {
     background: #091833;
     height: 95vh;
     width: 95vw;
@@ -9,18 +8,12 @@
     padding-left:20px;
 }
 
-.main-page-root {
+.about-me-page-root {
     background: #091833;
     height:100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.main-page-name-row {
-    margin:0px;
-    font-size: 1.75vh;
-    color:aliceblue;
 }
 
 .main-page-command-name {
@@ -43,12 +36,4 @@
 .command-return {
     margin-bottom:20px;
     margin-top:-15px;
-}
-
-.main-page-link {
-    cursor: pointer;
-}
-
-.main-page-link:hover {
-    color:#9622c1;
 }
