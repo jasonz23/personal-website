@@ -12,6 +12,7 @@
 .main-page-root {
     background: #091833;
     height:100vh;
+    width:100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,8 +20,9 @@
 
 .main-page-name-row {
     margin:0px;
-    font-size: 1.75vh;
+    font-size: 1.35vw;
     color:aliceblue;
+    font-weight: bold;
 }
 
 .main-page-command-name {
@@ -36,7 +38,7 @@
 }
 
 .main-page-command-input {
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 
@@ -47,8 +49,31 @@
 
 .main-page-link {
     cursor: pointer;
+    background-color: #091833;
+    border: 0px;
+    color: #0abdc6;
+    font-size: 20px;
+    padding: 0px;
+    margin-bottom: 10px;
 }
 
 .main-page-link:hover {
     color:#9622c1;
+}
+
+.main-page-subtitle {
+    color:aliceblue;
+    font-size: 2vh;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.main-page-instructions {
+    color:aliceblue;
+    font-size: 1.7vh;
+    margin: 0px;
+}
+
+.main-page-subtitle-body {
+    padding-top: 20px;
 }
