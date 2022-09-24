@@ -6,12 +6,12 @@ const AboutMe = () => {
         <div className="about-me-page-root">
             <div className="about-me-page-screen">
                 <p><span className="main-page-command-name">jasonzhao</span>@<span className="main-page-command-location">terminal</span>:$ ~ title</p>
-                <pre className="main-page-name-row">           _                 _     __  __      </pre> 
-                <pre className="main-page-name-row">     /\   | |               | |   |  \/  |     </pre>
-                <pre className="main-page-name-row">    /  \  | |__   ___  _   _| |_  | \  / | ___ </pre>
-                <pre className="main-page-name-row">   / /\ \ | '_ \ / _ \| | | | __| | |\/| |/ _ \</pre>
-                <pre className="main-page-name-row">  / ____ \| |_) | (_) | |_| | |_  | |  | |  __/</pre>
-                <pre className="main-page-name-row"> /_/    \_\_.__/ \___/ \__,_|\__| |_|  |_|\___|</pre>
+                <pre className="about-page-name-row">           _                 _     __  __      </pre> 
+                <pre className="about-page-name-row">     /\   | |               | |   |  \/  |     </pre>
+                <pre className="about-page-name-row">    /  \  | |__   ___  _   _| |_  | \  / | ___ </pre>
+                <pre className="about-page-name-row">   / /\ \ | '_ \ / _ \| | | | __| | |\/| |/ _ \</pre>
+                <pre className="about-page-name-row">  / ____ \| |_) | (_) | |_| | |_  | |  | |  __/</pre>
+                <pre className="about-page-name-row"> /_/    \_\_.__/ \___/ \__,_|\__| |_|  |_|\___|</pre>
                 <div className="main-page-subtitle-body">
                     <p className="main-page-subtitle">Some info about me</p>
                     <p className="main-page-instructions">Enter 'help' to see list of commands and locations</p>
