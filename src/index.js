@@ -6,7 +6,10 @@ import App from './pages/app/App.js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div className="root">
+      <App />
+    </div>
+    
   </React.StrictMode>
 );
 
