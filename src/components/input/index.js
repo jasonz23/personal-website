@@ -46,7 +46,8 @@ const Input = (props) => {
                 }
                 break;
             default:
-                location.innerHTML += `<div class="command-return">command not found: ${previousInput}. Please enter 'help' to see all available command.</div>`
+                location.innerHTML += `<div class="command-return">command not found: ${firstCommand}. Please enter 'help' to see all available command.</div>`;
+                break;
             
         }
     }
@@ -71,7 +72,6 @@ const Input = (props) => {
     }
 
     const checkLocationAndGo = (input, location) => {
-        console.log("b")
         switch (input) {
             case "github":
                 window.open("https://www.github.com/jasonz23");
@@ -81,6 +81,12 @@ const Input = (props) => {
                 break;
             case "aboutme":
                 window.open("/about-me","_self");
+                break;
+            case "projects":
+                window.open("/projects","_self");
+                break;
+            case "contactme":
+                window.open("/contact-me","_self");
                 break;
             case "..":
                 console.log(window.location.pathname);
