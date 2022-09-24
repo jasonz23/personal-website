@@ -46,3 +46,10 @@
     padding: 15px;
     margin-bottom:10px;
 }
+
+.about-page-name-row {
+    margin:0px;
+    font-size: 14px;
+    color:aliceblue;
+    font-weight: bold;
+}
