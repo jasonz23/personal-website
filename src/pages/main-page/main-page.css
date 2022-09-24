@@ -16,11 +16,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "terminalFont";
 }
 
 .main-page-name-row {
     margin:0px;
-    font-size: 1.35vw;
+    font-size: 18px;
     color:aliceblue;
     font-weight: bold;
 }
