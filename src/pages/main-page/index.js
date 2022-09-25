@@ -20,9 +20,9 @@ const MainPage = () => {
                         <p className="main-page-instructions">Enter 'ctrl + c' to clear the commands</p>
                     </div>
                     <p><span className="main-page-command-name">jasonzhao</span>@<span className="main-page-command-location">terminal</span>:$ ~ links</p>
-                    <Link className="main-page-link" onClick={() => {window.open("https://www.github.com/jasonz23")}}>Linkedln</Link>
+                    <Link className="main-page-link" onClick={() => {window.open("https://www.github.com/jasonz23")}}>Github</Link>
                     <br />
-                    <Link className="main-page-link" onClick={() => {window.open("https://www.linkedin.com/in/jason-zhao-24a5b8233/")}}>Github</Link>
+                    <Link className="main-page-link" onClick={() => {window.open("https://www.linkedin.com/in/jason-zhao-24a5b8233/")}}>Linkedin</Link>
                     <br />
                     <Link to="/about-me" className="main-page-link">About Me</Link>
                     <br />
