@@ -20,15 +20,15 @@ const MainPage = () => {
                         <p className="main-page-instructions">Enter 'ctrl + c' to clear the commands</p>
                     </div>
                     <p><span className="main-page-command-name">jasonzhao</span>@<span className="main-page-command-location">terminal</span>:$ ~ links</p>
-                    <Link className="main-page-link" onClick={() => {window.open("https://www.github.com/jasonz23")}}>Github</Link>
+                    <button className="main-page-link" onClick={() => {window.open("https://www.github.com/jasonz23")}}>Github</button>
                     <br />
-                    <Link className="main-page-link" onClick={() => {window.open("https://www.linkedin.com/in/jason-zhao-24a5b8233/")}}>Linkedin</Link>
+                    <button className="main-page-link" onClick={() => {window.open("https://www.linkedin.com/in/jason-zhao-24a5b8233/")}}>Linkedin</button>
                     <br />
-                    <Link to="/about-me" className="main-page-link">About Me</Link>
+                    <button className="main-page-link"><Link to="/about-me" className="main-page-link">About Me</Link></button>
                     <br />
-                    <Link className="main-page-link" to="/projects">Projects</Link>
+                    <button className="main-page-link"><Link className="main-page-link" to="/projects">Projects</Link></button>
                     <br />
-                    <Link className="main-page-link" to="/contact-me">Contact Me</Link>
+                    <button className="main-page-link"><Link className="main-page-link" to="/contact-me">Contact Me</Link></button>
                     <br />
                     <div id="main-page-input-body"></div>
                     <Input location="main-page"/>

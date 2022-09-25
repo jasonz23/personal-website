@@ -13,6 +13,7 @@
     border-radius: 10px;
     color:	#0abdc6;
     padding-left:20px;
+    overflow:scroll;
 }
 
 .contact-me-page-root {
@@ -21,6 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow:scroll;
 }
 
 .product-page-link {
