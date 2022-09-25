@@ -1,6 +1,7 @@
 import react from 'react';
 import './main-page.css';
 import Input from '../../components/input/index';
+import { Link } from 'react-router-dom';
 const MainPage = () => {
     return (
         <div className="main-page-root">
@@ -19,15 +20,15 @@ const MainPage = () => {
                         <p className="main-page-instructions">Enter 'ctrl + c' to clear the commands</p>
                     </div>
                     <p><span className="main-page-command-name">jasonzhao</span>@<span className="main-page-command-location">terminal</span>:$ ~ links</p>
-                    <button className="main-page-link" onClick={() => {window.open("https://www.github.com/jasonz23")}}>Linkedln</button>
+                    <Link className="main-page-link" onClick={() => {window.open("https://www.github.com/jasonz23")}}>Linkedln</Link>
                     <br />
-                    <button className="main-page-link" onClick={() => {window.open("https://www.linkedin.com/in/jason-zhao-24a5b8233/")}}>Github</button>
+                    <Link className="main-page-link" onClick={() => {window.open("https://www.linkedin.com/in/jason-zhao-24a5b8233/")}}>Github</Link>
                     <br />
-                    <button className="main-page-link" onClick={() => {window.open("/about-me","_self");}}>About Me</button>
+                    <Link to="/about-me" className="main-page-link">About Me</Link>
                     <br />
-                    <button className="main-page-link" onClick={() => {window.open("/projects","_self");}}>Projects</button>
+                    <Link className="main-page-link" to="/projects">Projects</Link>
                     <br />
-                    <button className="main-page-link" onClick={() => {window.open("/contact-me","_self");}}>Contact Me</button>
+                    <Link className="main-page-link" to="/contact-me">Contact Me</Link>
                     <br />
                     <div id="main-page-input-body"></div>
                     <Input location="main-page"/>

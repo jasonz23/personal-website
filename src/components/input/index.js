@@ -80,21 +80,22 @@ const Input = (props) => {
                 window.open("https://www.linkedin.com/in/jason-zhao-24a5b8233/");
                 break;
             case "aboutme":
-                window.open("/about-me","_self");
+                navigate("/about-me","_self");
                 break;
             case "projects":
-                window.open("/projects","_self");
+                navigate("/projects","_self");
                 break;
             case "contactme":
-                window.open("/contact-me","_self");
+                navigate("/contact-me","_self");
                 break;
             case "..":
                 console.log(window.location.pathname);
-                if (window.location.pathname.length > 1) {
-                    navigate(-1);
-                } else {
-                    location.innerHTML += '<div class="command-return">You are already on homepage. Can not go deeper.<div>';
-                }
+                navigate("/");
+                // if (window.location.pathname.length > 1) {
+                //     navigate(-1);
+                // } else {
+                //     location.innerHTML += '<div class="command-return">You are already on homepage. Can not go deeper.<div>';
+                // }
                 break;
             default:
                 throwCdError(location);

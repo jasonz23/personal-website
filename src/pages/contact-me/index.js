@@ -1,4 +1,5 @@
 import react from "react";
+import { Link } from "react-router-dom";
 import Input from "../../components/input";
 import "./contact-me.css"
 const ContactMe = () => {
@@ -17,7 +18,7 @@ const ContactMe = () => {
                     <p className="main-page-instructions">Enter 'help' to see list of commands and locations</p>
                 </div>
                 <p><span className="main-page-command-name">jasonzhao</span>@<span className="main-page-command-location">terminal</span>:$ ~ links</p>
-                <p className="main-page-link" onClick={() => {window.open("/","_self");}}>Main Page</p>
+                <Link className="main-page-link" to="/">Main Page</Link>
                 <p><span className="main-page-command-name">jasonzhao</span>@<span className="main-page-command-location">terminal</span>:$ ~ form</p>
 
                 <div id="contact-me-input-body"></div>
