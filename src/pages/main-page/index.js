@@ -17,7 +17,7 @@ const MainPage = () => {
                     <div className="main-page-subtitle-body"> 
                         <p className="main-page-subtitle">Third year computer science student at The University of British Columbia</p>
                         <p className="main-page-instructions">Enter 'help' to see list of commands and locations</p>
-                        <p className="main-page-instructions">Enter 'ctrl + c' to clear the commands</p>
+                        <p className="main-page-instructions">Press 'ctrl + c' to clear the commands</p>
                     </div>
                     <p><span className="main-page-command-name">jasonzhao</span>@<span className="main-page-command-location">terminal</span>:$ ~ links</p>
                     <button className="main-page-link" onClick={() => {window.open("https://www.github.com/jasonz23")}}>Github</button>
