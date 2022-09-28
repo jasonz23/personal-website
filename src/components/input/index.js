@@ -1,21 +1,17 @@
-import react from 'react';
 import './input.css';
-import {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Input = (props) => {
-    const [text,setText] = useState("");
+
     const navigate = useNavigate();
     const handleCommand = (location, previousInput) => {
-        const previousInputList = previousInput.split(" ").map(item => item.trim());;
-        console.log(previousInputList);
+        const previousInputList = previousInput.split(" ").map(item => item.trim());
         const firstCommand = previousInputList[0];
         if (previousInputList.length >= 3) {
             previousInputList[0] = "error";
         }
         switch (firstCommand) {
             case "help":
-                console.log("help");
                 location.innerHTML += `<div class="command-return">
                                         <div>
                                             Usable Commands are cd, help, ls
@@ -39,11 +35,7 @@ const Input = (props) => {
                 checkLocationAndGo(previousInputList[1], location);
                 break;
             case "ls":
-                if (window.location.pathname.length == 1) {
-                    location.innerHTML += '<div class="command-return">linkedin, github, aboutme, contactme<div>';
-                } else {
-                    location.innerHTML += "</ br>"
-                }
+                location.innerHTML += '<div class="command-return">linkedin, github, aboutme, projects, contactme<div>';
                 break;
             default:
                 location.innerHTML += `<div class="command-return">command not found: ${firstCommand}. Please enter 'help' to see all available command.</div>`;
@@ -60,7 +52,6 @@ const Input = (props) => {
         }
         if (event.key === "Enter") {
             const previousInput = event.target.value;
-            console.log(previousInput);
             inputBody.innerHTML += `<div class="main-page-command-input"><span class="main-page-command-name">jasonzhao</span>@<span class="main-page-command-location">terminal</span>:$ ~ ${previousInput}<div>`;
             event.target.value = "";
             handleCommand(inputBody,previousInput);
@@ -89,13 +80,7 @@ const Input = (props) => {
                 navigate("/contact-me","_self");
                 break;
             case "..":
-                console.log(window.location.pathname);
                 navigate("/");
-                // if (window.location.pathname.length > 1) {
-                //     navigate(-1);
-                // } else {
-                //     location.innerHTML += '<div class="command-return">You are already on homepage. Can not go deeper.<div>';
-                // }
                 break;
             default:
                 throwCdError(location);
@@ -112,10 +97,7 @@ const Input = (props) => {
                 className="input-box" 
                 type="text" 
                 aria-label="prompt" 
-                autoFocus 
-                onChange={(e) => {
-                    setText(e.target.value);
-                }} 
+                autoFocus  
                 onKeyDown={onSubmit}
                 autoComplete="off"
                 autoCorrect="off"
