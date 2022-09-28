@@ -27,7 +27,7 @@ const Projects = () => {
                 <div>
                     {projectsInfo.map((projectInfo) => {
                         return (
-                            <div>
+                            <div key={projectInfo.id}>
                                 <Project info = {projectInfo} />
                             </div>      
                         )
