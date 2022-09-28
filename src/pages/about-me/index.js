@@ -21,10 +21,10 @@ const AboutMe = () => {
                 <Link className="main-page-link" to="/">Main Page</Link>
                 <p><span className="main-page-command-name">jasonzhao</span>@<span className="main-page-command-location">terminal</span>:$ ~ aboutme</p>
                     <div className="about-me-info">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, aspernatur doloribus? Distinctio in commodi, nam voluptatum soluta, a praesentium provident obcaecati porro dolor recusandae modi odio delectus beatae est doloremque!
+                        I am currently a third year computer science student at UBC. I have taken courses in Object Oriented Programming, Computer Systems, Discrete Math and Data Structure and Algorithms. 
                     </div>
                     <div className="about-me-info">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, aspernatur doloribus? Distinctio in commodi, nam voluptatum soluta, a praesentium provident obcaecati porro dolor recusandae modi odio delectus beatae est doloremque!
+                        In my free time I love to play tennis, video games and program. 
                     </div>
                 
                 
