@@ -39,3 +39,77 @@
 .product-page-link:hover {
     color:#9622c1;
 }
+
+.contact-input-box {
+    background: #091833;
+    border: dashed aliceblue 1px;
+    color:#0abdc6;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    font-size:16px;
+    height: 23px;
+
+}
+
+.contact-input-field {
+    width:20%;
+}
+
+input[type="text"]
+{
+    font-size:16px;
+}
+
+.contact-input-box:focus {
+    border: dashed aliceblue 1px;
+    outline:none;
+}
+
+.contact-input-box-message {
+    background: #091833;
+    border: dashed aliceblue 1px;
+    color:#0abdc6;
+    width:95%;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    font-size:16px;
+    height: 100px;
+}
+
+.contact-input-box-message:focus {
+    border: dashed aliceblue 1px;
+    outline:none;
+}
+
+.contact-input-box-subject {
+    background: #091833;
+    border: dashed aliceblue 1px;
+    color:#0abdc6;
+    width: 95%;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    font-size:16px;
+    height: 23px;
+}
+
+.contact-input-box-subject:focus {
+    border: dashed aliceblue 1px;
+    outline:none;
+
+}
+
+.contact-input-title {
+    margin:5px;
+}
+
+.contact-form-submit {
+    width:96%;
+    cursor: pointer;
+    height: 25px;
+    margin-bottom: 10px;
+    color: #0abdc6;
+    font-size: 16px;
+    background-color: #721b92;
+    border: aliceblue 1px dashed;
+}
