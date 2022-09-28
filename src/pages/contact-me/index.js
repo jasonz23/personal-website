@@ -1,7 +1,9 @@
 import react from "react";
 import { Link } from "react-router-dom";
 import Input from "../../components/input";
-import "./contact-me.css"
+import { Grid } from "@mui/material";
+import "./contact-me.css";
+
 const ContactMe = () => {
     return (
         <div className="contact-me-page-root">
@@ -20,7 +22,29 @@ const ContactMe = () => {
                 <p><span className="main-page-command-name">jasonzhao</span>@<span className="main-page-command-location">terminal</span>:$ ~ links</p>
                 <Link className="main-page-link" to="/">Main Page</Link>
                 <p><span className="main-page-command-name">jasonzhao</span>@<span className="main-page-command-location">terminal</span>:$ ~ form</p>
-
+                <form>
+                    <Grid container spacing={1}>
+                        <Grid xs={12} sm={6} item>
+                            <p className="contact-input-title">Name</p>
+                            <input className="contact-input-box" />
+                        </Grid>
+                        <Grid xs={12} sm={6} item>
+                            <p className="contact-input-title">Email</p>
+                            <input className="contact-input-box" />
+                        </Grid>
+                        <Grid xs={12} sm={12} item>
+                            <p className="contact-input-title">Subject</p>
+                            <input className="contact-input-box-subject" />
+                        </Grid>
+                        <Grid xs={12} sm={12} item>
+                            <p className="contact-input-title">Message</p>
+                            <textarea className="contact-input-box-message" rows="30" columns="30"> </textarea>
+                        </Grid>
+                        <Grid xs={12} sm={12} item>
+                            <button className="contact-form-submit">Submit</button>
+                        </Grid>
+                    </Grid>
+                </form>
                 <div id="contact-me-input-body"></div>
                 <Input location="contact-me"/>
             </div>
