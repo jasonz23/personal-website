@@ -1,6 +1,6 @@
 import './input.css';
 import { useNavigate } from 'react-router-dom';
-
+import pdf from "../../static/info/Resume_JasonZhao.pdf";
 const Input = (props) => {
 
     const navigate = useNavigate();
@@ -78,6 +78,9 @@ const Input = (props) => {
                 break;
             case "contactme":
                 navigate("/contact-me","_self");
+                break;
+            case "resume":
+                window.open(pdf);
                 break;
             case "..":
                 navigate("/");

@@ -2,6 +2,7 @@ import react from 'react';
 import './main-page.css';
 import Input from '../../components/input/index';
 import { Link } from 'react-router-dom';
+import pdf from "../../static/info/Resume_JasonZhao.pdf";
 const MainPage = () => {
     return (
         <div className="main-page-root">
@@ -29,6 +30,8 @@ const MainPage = () => {
                     <button className="main-page-link"><Link className="main-page-link" to="/projects">Projects</Link></button>
                     <br />
                     <button className="main-page-link"><Link className="main-page-link" to="/contact-me">Contact Me</Link></button>
+                    <br />
+                    <button className="main-page-link"><a className="main-page-link" href={pdf} target="_blank">Resume</a></button>
                     <br />
                     <div id="main-page-input-body"></div>
                     <Input location="main-page"/>
