@@ -13,23 +13,24 @@ const Input = (props) => {
         switch (firstCommand) {
             case "help":
                 location.innerHTML += `<div class="command-return">
-                                        <div>
-                                            Usable Commands are cd, help, ls
-                                        </div>
-                                        <div>
                                             <div>
-                                                cd location: 
+                                                Usable Commands are cd, help, ls
                                             </div>
                                             <div>
-                                                <ul>
-                                                    <li>linkedin</li>
-                                                    <li>github</li>
-                                                    <li>aboutme</li>
-                                                    <li>contactme</li>
-                                                </ul>
+                                                <div>
+                                                    cd location: 
+                                                </div>
+                                                <div>
+                                                    <ul>
+                                                        <li>linkedin</li>
+                                                        <li>github</li>
+                                                        <li>aboutme</li>
+                                                        <li>contactme</li>
+                                                        <li>resume</li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>`
+                                        </div>`
                 break;
             case "cd":
                 checkLocationAndGo(previousInputList[1], location);
