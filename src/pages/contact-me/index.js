@@ -1,10 +1,39 @@
-import react from "react";
+import react, { useRef } from "react";
 import { Link } from "react-router-dom";
 import Input from "../../components/input";
 import { Grid } from "@mui/material";
+import emailjs from '@emailjs/browser';
+
 import "./contact-me.css";
 
 const ContactMe = () => {
+    const form = useRef();
+
+    const sendEmail = async (e) => {
+        e.preventDefault();
+        const formElements = form.current.elements;
+        console.log(process.env.REACT_APP_USER_ID)
+        const data = {
+            name: formElements['name'].value,
+            subject: formElements['subject'].value,
+            email: formElements['email'].value,
+            message: formElements['message'].value
+        }
+
+        try {
+            await emailjs.send(
+                'service_hk73x2p',
+                'contact-form',
+                data,
+                '4AJU7_g4gyOqqmVZE'
+            );
+        } catch(e)
+        {
+            console.error(e);
+        }
+        
+    }
+
     return (
         <div className="contact-me-page-root">
             <div className="contact-me-page-screen">
@@ -22,23 +51,31 @@ const ContactMe = () => {
                 <p><span className="main-page-command-name">jasonzhao</span>@<span className="main-page-command-location">terminal</span>:$ ~ links</p>
                 <Link className="main-page-link" to="/">Main Page</Link>
                 <p><span className="main-page-command-name">jasonzhao</span>@<span className="main-page-command-location">terminal</span>:$ ~ form</p>
-                <form>
+                <form ref={form} onSubmit={sendEmail}>
                     <Grid container spacing={1}>
                         <Grid xs={12} sm={6} item>
-                            <p className="contact-input-title">Name</p>
-                            <input className="contact-input-box" />
+                            <label className="contact-input-title">
+                                Name
+                                <input className="contact-input-box name" id="name"/>
+                            </label>
                         </Grid>
                         <Grid xs={12} sm={6} item>
-                            <p className="contact-input-title">Email</p>
-                            <input className="contact-input-box" />
+                            <label className="contact-input-title">
+                                Email
+                                <input className="contact-input-box" id="email"/>
+                            </label>
                         </Grid>
                         <Grid xs={12} sm={12} item>
-                            <p className="contact-input-title">Subject</p>
-                            <input className="contact-input-box-subject" />
+                            <label className="contact-input-title">
+                                Subject
+                                <input className="contact-input-box-subject" id="subject"/>
+                            </label>
                         </Grid>
                         <Grid xs={12} sm={12} item>
-                            <p className="contact-input-title">Message</p>
-                            <textarea className="contact-input-box-message" rows="30" columns="30"> </textarea>
+                            <label className="contact-input-title">
+                                Message
+                                <textarea className="contact-input-box-message" rows="30" columns="30" id="message"> </textarea>
+                            </label>
                         </Grid>
                         <Grid xs={12} sm={12} item>
                             <button className="contact-form-submit">Submit</button>
