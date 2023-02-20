@@ -1,9 +1,9 @@
 import { Modal } from "@mui/material";
 import react, {useState} from "react";
-import Input from "../../components/input";
+import Input from "../input";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
-import "./projects.css";
+import "./project.css";
 
 const Project = (props) => {
     const [showModal,setShowModal] = useState(false);
