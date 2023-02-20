@@ -21,15 +21,17 @@ const AboutMe = () => {
                 <Link className="main-page-link" to="/">Main Page</Link>
                 <p><span className="main-page-command-name">jasonzhao</span>@<span className="main-page-command-location">terminal</span>:$ ~ aboutme</p>
                     <div className="about-me-info">
-                        I am currently a third year computer science student at UBC. I have taken courses in Object Oriented Programming, Computer Systems, Discrete Math and Data Structure and Algorithms. 
+                    📚 Third year computer science student at The University of British Columbia.
+                    <br />
+                    👨‍💻 Full Stack Developer at STN Video (React, JavaScript, Java, PHP, Node JS)
+                    <br />
+                    <br />
+                    As a full stack developer and student at the University of British Columbia, I am constantly striving to improve my skills and stay up-to-date with the latest technologies. My main expertise lies in React, JavaScript, Java, Node JS and PHP, but I am always eager to learn new programming languages and tools. I thrive in fast-paced environments and consider myself a quick learner. I am highly motivated and dedicated to delivering high-quality software solutions.
                     </div>
                     <div className="about-me-info">
                         In my free time I love to play tennis, video games and program. 
-                    </div>
-                
-                
+                    </div>            
                 <div id="about-me-input-body">
-
                 </div>
                 <Input location="about-me"/>
             </div>
