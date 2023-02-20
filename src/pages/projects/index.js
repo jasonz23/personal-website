@@ -2,7 +2,7 @@ import react from "react";
 import { Link } from "react-router-dom";
 import Input from "../../components/input";
 import projectsInfo from "../../static/info/projects-info";
-import Project from "./project";
+import Project from "../../components/project/project";
 import "./projects.css";
 const Projects = () => {
     return (
