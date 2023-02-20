@@ -36,12 +36,11 @@ const Input = (props) => {
                 checkLocationAndGo(previousInputList[1], location);
                 break;
             case "ls":
-                location.innerHTML += '<div class="command-return">linkedin, github, aboutme, projects, contactme<div>';
+                location.innerHTML += '<div class="command-return">linkedin, github, aboutme, projects, contactme, resume<div>';
                 break;
             default:
                 location.innerHTML += `<div class="command-return">command not found: ${firstCommand}. Please enter 'help' to see all available command.</div>`;
                 break;
-            
         }
     }
 
