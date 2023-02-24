@@ -1,5 +1,12 @@
 const projectInfo = [
     {
+        id: 0,
+        title: "Color Palette Generator",
+        bio: "Generate a color palette based on a given hex code.",
+        link: "https://jasonz23.github.io/creative-site/",
+        github: "https://github.com/jasonz23/creative-site"
+    },
+    {
         id: 1,
         title: "School/ Grade Manager",
         bio: "Application where you can manage and store classes and grades",
