@@ -23,13 +23,21 @@ const Project = (props) => {
             <Modal open={showModal} keepMounted style={{display:"flex",justifyContent:"center",alignItems:"center"}} onClose={() => setShowModal(false)}>
                 <div className="project-me-page-modal">
                     <div>
-                        <h1>{props.info.title}</h1>
-                        <p>{props.info.bio}</p>
+                        <h1 style={{marginTop:"20px", marginBottom: "10px"}}>{props.info.title}</h1>
+                        <p style={{margin:0}}>{props.info.bio}</p>
                     </div>
+                    {props?.info?.tools ? <div style={{alignSelf:"start"}}>
+                        <p>Languages/ Tools</p>
+                        <ul>
+                            {props?.info?.tools?.map((a) => {
+                                return <li>{a}</li>
+                            })}
+                        </ul>
+                    </div> : null}
                     
                     <div className="project-info-icons">
                         <GitHubIcon style={{fontSize:"50px", cursor:"pointer"}} onClick={() => {window.open(props.info.github)}}/>
-                        <LinkIcon  style={{fontSize:"50px", cursor:"pointer"}} onClick={() => {window.open(props.info.link)}}/>
+                        <LinkIcon  style={{fontSize:"50px", cursor:"pointer", marginLeft:"20px"}} onClick={() => {window.open(props.info.link)}}/>
                     </div>
                     
                 </div>
