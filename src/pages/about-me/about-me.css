@@ -55,3 +55,12 @@
     color:aliceblue;
     font-weight: bold;
 }
+
+@media (max-width: 660px) {
+    .about-page-name-row {
+        margin:0px;
+        font-size: 8px;
+        color:aliceblue;
+        font-weight: bold;
+    }
+}

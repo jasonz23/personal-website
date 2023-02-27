@@ -5,6 +5,15 @@
     font-weight: bold;
 }
 
+@media (max-width:660px) {
+    .contact-page-name-row {
+        margin:0px;
+        font-size: 8px;
+        color:aliceblue;
+        font-weight: bold;
+    }
+}
+
 .contact-me-page-screen {
     background: #091833;
     height: 95vh;
