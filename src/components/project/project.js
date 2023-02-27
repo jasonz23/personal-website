@@ -29,8 +29,8 @@ const Project = (props) => {
                     {props?.info?.tools ? <div style={{alignSelf:"start"}}>
                         <p>Languages/ Tools</p>
                         <ul>
-                            {props?.info?.tools?.map((a) => {
-                                return <li>{a}</li>
+                            {props?.info?.tools?.map((a, i) => {
+                                return <li key={i}>{a}</li>
                             })}
                         </ul>
                     </div> : null}
