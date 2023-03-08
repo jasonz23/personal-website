@@ -55,13 +55,13 @@ const ContactMe = () => {
                     <Grid container spacing={1}>
                         <Grid xs={12} sm={6} item>
                             <label className="contact-input-title">
-                                Name
+                                <p style={{padding:0, margin:5}}>Name</p>
                                 <input className="contact-input-box name" id="name"/>
                             </label>
                         </Grid>
                         <Grid xs={12} sm={6} item>
                             <label className="contact-input-title">
-                                Email
+                                <p style={{padding:0, margin:5}}>Email</p>
                                 <input className="contact-input-box" id="email"/>
                             </label>
                         </Grid>
