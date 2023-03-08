@@ -3,25 +3,25 @@ const projectInfo = [
         id: 0,
         title: "Color Palette Generator",
         bio: "Generate a color palette based on a given hex code.",
-        tools: ["React.JS", "TypeScript", "Git", "HTML", "CSS"],
+        tools: ["React.TS", "TypeScript", "Git", "HTML", "CSS"],
         link: "https://jasonz23.github.io/creative-site/",
         github: "https://github.com/jasonz23/creative-site"
     },
     {
         id: 1,
+        title: "Pokemon Stat Compare Game",
+        bio: "Select the Pokemon with the higher stat, each game has a random comparison stat. User can create account/ sign in to save highest score.",
+        tools: ["Next TS", "React TS", "Typescript", "Prisma", "trpc", "HTML", "CSS", "Git"],
+        link: "https://roundest-pokemon-pink.vercel.app",
+        github: "https://github.com/jasonz23/roundest-pokemon"
+    },
+    {
+        id: 2,
         title: "School/ Grade Manager",
         bio: "Application where you can manage and store classes and grades",
         tools: ["Java", "JUnit", "Git", "Java Swing"],
         link: "https://github.com/jasonz23/School-and-Grade-Manager",
         github: "https://github.com/jasonz23/School-and-Grade-Manager",
-    },
-    {
-        id: 2,
-        title: "To-Do Application",
-        bio: "A to do application built that can store and remove tasks",
-        tools: ["React.JS", "JavaScript", "Git", "HTML", "CSS"],
-        link: "https://to-do-application-jason.netlify.app/",
-        github: "https://github.com/jasonz23/todo-application",
     },
     {
         id: 3,
@@ -41,6 +41,14 @@ const projectInfo = [
     },
     {
         id: 5,
+        title: "To-Do Application",
+        bio: "A to do application built that can store and remove tasks",
+        tools: ["React.JS", "JavaScript", "Git", "HTML", "CSS"],
+        link: "https://to-do-application-jason.netlify.app/",
+        github: "https://github.com/jasonz23/todo-application",
+    },
+    {
+        id: 6,
         title: "Tricity Website",
         bio: "Resturant website for the Tricity Japanese Salmon Bowl",
         tools: ["React.JS", "JavaScript", "Git", "HTML", "CSS", "Node JS", "Strapi"],
@@ -48,7 +56,7 @@ const projectInfo = [
         github: "https://github.com/frankljin/tricity"
     },
     {
-        id: 6,
+        id: 7,
         title: "Art Blog",
         bio: "Full Stack website that allows users to add, edit and delete art blog posts.",
         tools: ["React.JS", "JavaScript", "Git", "HTML", "CSS", "Node JS", "Express", "MongoDB"],
